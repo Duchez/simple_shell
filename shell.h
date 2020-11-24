@@ -8,4 +8,8 @@
 #include <unistd.h>
 #include <string.h>
 
+char *userInput(void);
+char **strTokens(char *input);
+char *inargv(FILE *filestr, size_t s);
 
+#endif
