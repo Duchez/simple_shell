@@ -1,0 +1,85 @@
+.TH Holberton_Project 02 "25 November 2020" "VI.0" "Simple Shell Manual"
+.SH NAME
+.B
+- Simple Shell
+.SH DESCRIPTION
+.B
+Simple Shell is is a program that runs in the similar manner to a shell command-line interpreter.
+
+.B Overview
+
+The simple shell is a simplified iteration of a command line interpreter, similar to 
+.B bash or 
+.B dash. 
+.I FORMAT [ARGUMENT]...
+.SH OPTIONS
+.B Simple Shell
+operates in both 
+.I interactive 
+and 
+.I non-interactive
+ mode. When initiated,
+.B simple shell
+uses the commands that are specified in that particular progam
+.SH ARGUMENTS
+The first argument, argument 0 is understood to be the command to be run by 
+.B simple shell
+and arguments following as modifiers or options.
+.SH INVOCATION
+.B simple shell
+may be invoked with the same functionality in 
+.I interactive 
+or 
+.I non-interactive 
+mode.  User may quit the program by typing "exit" on the command line.
+
+
+.B Example
+.IP
+
+$./shell
+
+simple@shell$pwd
+
+/home/vagrant/simple_shell
+
+simple@shell$
+
+simple@shell$exit
+
+$
+
+
+.SH RESERVED WORDS
+.B exit: 
+exits the shell.
+
+.B env: 
+prints the environment variables
+
+
+.SH FILES
+.I mainsish.c 
+- Contains the int main(void) function, entry point.
+
+.I error_message.c
+- Contains functions that creates messages appropriate to specific errors:
+.B _puterror, build_error_message, end_of_file, fork_fail
+
+.I strtok_example.c 
+- Contains function that stores commands in double pointer: 
+.B find_command_length, array_form_strtok functions.
+
+.I helper_function.c 
+- Contains all helper functions:
+.B _strncpy,_strlen_const,_strcmp,_strlen,_strncpyconst
+
+.I child_processes.c
+- Contains additional processes required by multiple files
+.B command_is_null,exit_out,env_out,parent_free_buff_commands,c_path
+
+.SH BUGS
+Report 
+.B simple shell 
+.SH AUTHOR
+Eddy M'maitsi, Vivian Anyango, Alang'o Bryan
