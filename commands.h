@@ -1,8 +1,14 @@
 #ifndef COMMANDS_H
 #define COMMANDS_H
 
-int exits(char **ptr);
-int cdir(char **ptr);
+#include <stddef.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+
+int exitSish(char **ptr);
+int cdir(char **argv);
 
 
 

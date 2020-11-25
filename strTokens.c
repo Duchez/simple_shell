@@ -13,7 +13,7 @@ char **strTokens(char *input)
 
         if (!parts)
         {
-                fprintf(stderr, "error in setting");
+                fprintf(stderr, "error in setting\n");
                 exit(EXIT_SUCCESS);
         }
 
@@ -28,7 +28,15 @@ char **strTokens(char *input)
                         buffer += BUFFSIZE;
                         parts = realloc(parts, buffer * sizeof(char*));
 
-                        if ()
+                        if (!parts)
+                        {
+                                fprintf(stderr, "error in setting\n");
+                                exit(EXIT_FAILURE);
+                        }
                 }
+
+                tokptr = strtok(NULL, DELIMS);
         }
+        parts[iter] = NULL;
+        return (parts);
 }

@@ -6,7 +6,7 @@
  * Return: 0 on success
  */
 
-int exits(char)
+int exitSish(char **ptr)
 {
         return (0);
 }

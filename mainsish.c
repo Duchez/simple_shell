@@ -1,4 +1,6 @@
 #include "shell.h"
+#include "commands.h"
+
 /**
  * main - runs a shell
  * @argc: argument counter
@@ -9,5 +11,5 @@
 int main(int argc, char **argv)
 {
         sish();
-        return EXIT_SUCCESS;
+        return (EXIT_SUCCESS);
 }
