@@ -1,0 +1,34 @@
+.\" Manpage for simple shell Project
+.TH man 1 "16 Nov 2020" "1.0" "simple_shell Project Man Page"
+.SH NAME
+.simple_shell
+\
+simple_shell - simple_shell (hsh). This is an emulator of the Linux shell except that it will be a basic representaion of the same.
+
+Take input when you type a command and execute some functions based on that input and show you the output command.
+
+.SH SYNOPSIS
+./hsh
+/bin/[command] [option]
+.SH DESCRIPTION
+Is a simple hsh command language interpreter that executes commands using the path of this command that stored in the bin directory, the shell read from the standard input through the getline command, is based on the shell designed by Ken Thompson
+.SH EXAMPLE
+$ /bin/ls -l
+drwxrwxr-x 1 vagrant vagrant 279 Nov 20 03:14 README.md
+drwxrwxr-x 2 vagrant vagrant 165 Nov 20 23:46 arguments.c
+
+$ /bin/pwd
+/home/vagrant/test_my_own_shell
+
+$ hhhhh
+Does not execute, write valid command: No such file or directory
+
+.SH SEE ALSO
+env(1), strtok(3), getline(3)
+.SH BUGS
+
+In instances of a bug(s), kindly reach out to:
+b.alango@launchpad.alx.app
+
+.SH AUTHOR
+Bryan Alang'o, Vivian Anyango, & Edwin M'maitsi - students, ALX-Holberton, Cohort 0.
