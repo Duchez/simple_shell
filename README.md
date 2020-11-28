@@ -1,2 +1,0 @@
-# Holberton Project
-# Simple shell
